@@ -86,7 +86,7 @@ namespace AzureStorageMPAdemo
             }
             catch (Exception ex)
             { 
-                Console.WriteLine("An error occourred: " + ex.ToString());
+                Console.WriteLine("An error occourred: " + ex.Message);
             } 
 
 
