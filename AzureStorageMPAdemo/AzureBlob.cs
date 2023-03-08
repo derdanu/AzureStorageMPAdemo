@@ -113,7 +113,7 @@ namespace AzureStorageMPAdemo
         private BlobServiceClient InitalizeClient()
         {
              
-            return _blobServiceClient ?? new BlobServiceClient(storageAccountUri, AzureCredentials);
+            return _blobServiceClient = _blobServiceClient ?? new BlobServiceClient(storageAccountUri, AzureCredentials);
  
         }
 

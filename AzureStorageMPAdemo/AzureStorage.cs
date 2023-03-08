@@ -46,9 +46,12 @@ namespace AzureStorageMPAdemo
             get => _downloadDirectoryPath;
             set
             {
+               
                 if (!Directory.Exists(value))
                 {
+#pragma warning disable CS8604 // Possible null reference argument.
                     Directory.CreateDirectory(value);
+#pragma warning restore CS8604 // Possible null reference argument.
                 }
 
                 _downloadDirectoryPath = value;
